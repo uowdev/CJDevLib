@@ -1,0 +1,74 @@
+<!--
+Javascript is a Client Side Scripting Language
+Javascript =/= Javascript
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>
+    Javascript
+  </title>
+  <script>
+    function saySomething(dontusekeywords) {
+      document.write(dontusekeywords);
+    }
+  </script>
+</head>
+<body>
+  <script>
+    document.write("Hello, World");
+    //Variables
+    var avariable;
+    var avariable = 5;
+    var avariable = true;
+    //Comments are nice
+    //Concatonate
+    var words = "butts";
+    var word = "butt";
+    var sentence = words + word;
+    document.write(sentence);
+    //Meths
+    var number = 1;
+    var numba = 2;
+    var sum = numba + number;
+    var more = ++sum;
+    document.write(more);
+    // string.functions
+    var count = words.length;
+    document.write(count);
+    var counter = "ABCDEFG";
+    var substring = counter.substring(3 ,5);
+    document.write(substring);
+    document.write("<br>");
+    document.write("cat");
+    //Arrays
+    var a = new Array(3);
+    a[0] = "hilarhious";
+    a[1] = "funny";
+    a[2] = "Lol";
+    //or
+    var b = new Array("Hilarious", "funny", "lol");
+    //or
+    var c  = ["hilarious", "funny", "Lol"];
+    document.write(a[0]);
+    //functions (Check the <head>)
+    saySomething("peanut butter");
+    //FlowControl
+    //If Statements
+    var a = 9;
+    if (a > 10){
+      alert(a);
+    }
+    else {
+      alert("Wow");
+    }
+
+    // //Loops
+    for (i=1;i<5;i++){
+      document.write("<br> This" + i + "time");
+    }
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,18 @@
+Docker is for running applications in an isolated environment. Its advantages are similar to that in a VM.
+
+a) Remove "It worked on my computer"
+b) Sandbox projects
+c) Sharing projects is easier
+
+Lighter than a VM, uses containers which contains only the essentials of a system.
+Essentially- enabling a VM without a kernel or the associated library.
+
+Docker uses special features of UNIX to use any Linux machines kernel.
+
+Container- A running instance of an image. >
+Image- Template for the snapshot environment >
+Docker File- A list of steps to perform to create an image
+
+hub.docker contains many example docker images to simplify the setup process
+
+Volumes: Allows for sharing files between local files and docker files. This  is enabled by using -v in the run command and specifying a folder.  

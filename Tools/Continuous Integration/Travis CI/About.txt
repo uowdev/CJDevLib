@@ -1,0 +1,1 @@
+Travis is a continuous integration system for automating many of steps in testing among teams. 
