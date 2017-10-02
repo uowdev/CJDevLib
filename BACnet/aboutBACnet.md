@@ -1,10 +1,10 @@
-#BACnet
+# BACnet
 
 "Building Automation and Control Network"
 
 Object-Oriented, Open Architecture intended to provide a standard interface for Building Automation and Control networks
 
-Developed in 1987 by American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE)
+Developed in 19a87 by American Society of Heating, Refrigerating and Air-Conditioning Engineers (ASHRAE)
 
 Concept is to capture the environment, similar to the human senses:
 ```
@@ -26,19 +26,19 @@ Node data is interpreted in a variety of ways such as:
 *Who-Has*
 *I-Have*
 
-##Supported Physical and Link Layer protocols
-###PTP (Point to Point)
+## Supported Physical and Link Layer protocols
+### PTP (Point to Point)
 Communication over Modem and Voice Phone Lines
 Slow: 9.8kbit/s -> 56.0kbit/s
 Supports V.32bis and V.42 and Direct Cable Connection with EIA-232
-###MS/TP (Master Slave/Token Passing)
+### MS/TP (Master Slave/Token Passing)
 SHielded twisted pairs, low cost.
-###ARCNET
+### ARCNET
 Token bus standard. Can run up to 7.5 Mbit/s
-###Ethernet
+### Ethernet
 Primary media in use today.
 
-##Object Orientation
+## Object Orientation
 BACnet data is represented as *Objects*, *Properties* and *Services*
 
 All BACnet *Objects* have an identifier (Such as Al-1) which allows BACnet to identify it.  
