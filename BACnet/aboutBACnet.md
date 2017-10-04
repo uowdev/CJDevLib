@@ -43,7 +43,9 @@ BACnet data is represented as *Objects*, *Properties* and *Services*
 
 All BACnet *Objects* have an identifier (Such as Al-1) which allows BACnet to identify it.  
 
-BACnet Objects feature some of the following properties:
+There are 60 standard object types.
+
+BACnet Objects feature some of the following types:
 ```
 Analogue Input
 Analogue Output
@@ -72,3 +74,7 @@ There are required classes for each object and anything else is at the discretio
 *Services* instruct BACnet objects or make requests for information for those objects. Services are how one BACnet device gets information from another. There are 32 defined services.
 
 Different devices support different objects and different service requests. These are defined by the devices PICS (Protocol Implementation Conformance Statement)
+
+## BACnet libraries
+
+### BACPypes
