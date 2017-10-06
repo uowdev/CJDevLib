@@ -6,7 +6,7 @@ file containing a username and its type delimited by comma per line. There are t
 are added to the staff group and visitor users to the visitors group.
 
 ## 1.
-Write a Bash script, called createUsers.sh, to do the followings.
+Write a Bash script, called createUsers.sh, to do the following.
 a) Create a group called visitors;
 
 b) Create an account for each user and add the user to its group.
@@ -42,9 +42,7 @@ ELV names are all listed in capital letters under the /elv directory. Your outpu
 name per line, with no duplicates:
 
 ALICE
-
 BOB
-
 CHARLIE
 
 Save your output in a text file called elv.txt.

@@ -10,7 +10,7 @@ if  [ $EUID -ne 0 ]; then
   exit 2
 fi
 
-# Check for groups and create if they don't exit
+# Check for groups and create them if they don't exist
 
 if grep -q staff /etc/group
 then
@@ -38,21 +38,23 @@ if [ ! -f "$FILE" ]then
   exit 2
 fi
 
-for USER in $(cat $FILE)
+for USER in $FILE
 do
-  useradd -m $USER
-  logger "User $USER created"
-  echo "User $USER created"
+  if [ $USER == ,* ]
+  then
+    useradd -m $USER
+    logger "User $USER created"
+    echo "User $USER created"
+  fi
 done
 
-
-for USER in $(cat $FILE)
+for USER in $FILE
 do
-    if [[ $USER == x* ]] && [[ $USER == *x ]]
+    if [[ $USER == ,* ]] && [[ $GROUP == *, ]]
     then
-      usermod -a -G xx $USER
-      echo "User $USER added to xx group"
-      logger "User $USER added to xx gorup"
+      usermod -a -G $GROUP $USER
+      echo "User $USER added to $Group group"
+      logger "User $USER added to $Group gorup"
     fi
   done
 
