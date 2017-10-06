@@ -18,7 +18,7 @@ $SkypeOnlineDisabled = New-MsolLicenseOptions -AccountSkuId "$AccountSkuId" -Dis
 
 do {
     foreach ($Username in $Users) {
-        $Username = $Username.Samaccountname + "@wisetechglobal.com"
+        $Username = $Username.Samaccountname + "@BIZNIZtechglobal.com"
         try {
             Write-Host "Changing license for $Username" -foregroundcolor yellow -backgroundcolor blue
             #You need to assign the correct Usagelocation when assigning a license. Comment out if you don't want to change.
