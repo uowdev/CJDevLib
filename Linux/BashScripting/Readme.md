@@ -40,7 +40,11 @@ removing any square brackets.)
 c) Write a one-line command to compile and print all of the Expendable Launch Vehicle names listed in the log. The
 ELV names are all listed in capital letters under the /elv directory. Your output should appear in the format of one
 name per line, with no duplicates:
+
 ALICE
+
 BOB
+
 CHARLIE
+
 Save your output in a text file called elv.txt.
